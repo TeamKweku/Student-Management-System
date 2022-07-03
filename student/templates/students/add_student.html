@@ -18,9 +18,10 @@
                     <form action="{% url 'add-student' %}" method="POST">
                         {% csrf_token %}
                         {{form.as_p}}
-                    </form>
                     <button type="submit" class="btn btn-primary">Add</button>
                     <a href="{% url 'index' %}" class="btn btn-secondary">Cancel</a>
+                    </form>
+                    
                 </div>
               </div>
         </div>
